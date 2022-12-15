@@ -24,13 +24,17 @@ function App() {
 
   return (
     <div className="App">
-      <h5>Nome do Estado</h5>
-      <p>{data?.state}</p>
-      <h5>Número de casos</h5>
-      <p>{data?.cases}</p>
-      <h5>Número de mortes</h5>
-      <p>{data?.deaths}</p>
-      <input type="text" onChange={(e) => setStatesName(e.target.value)} />
+      <h2>Covid19 nos EUA</h2>
+      <div className='Card'>
+      <input type="text" placeholder='Digite o nome do Estado.' onChange={(e) => setStatesName(e.target.value)} />
+        <h4>Nome do Estado</h4>
+        <p>{data?.state}</p>
+        <h4>Número de casos</h4>
+        <p>{data?.cases}</p>
+        <h4>Número de mortes</h4>
+        <p>{data?.deaths}</p>
+        
+      </div>
     </div>
   )
 }

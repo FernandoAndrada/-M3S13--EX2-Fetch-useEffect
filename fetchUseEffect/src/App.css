@@ -39,3 +39,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.Card{
+  display: flex;
+  
+  box-shadow: 10px 30px 20px gray;
+  flex-direction: column;
+  max-width: auto;
+  padding: 2rem;
+  background-color: rgb(232, 213, 218);
+  border-radius: 25px;
+  
+  margin-left: 10px;
+  margin: 10px;
+}
